@@ -3,11 +3,9 @@ import ProductSlider from '../components/ProductSlider'
 import ProductList from '../components/ProductList'
 import products from '../data/products'
 
-// Ejemplo simple de cómo dividir productos por categorías
 const nuevaColeccion = products.slice(0, 3)
 const bolsos = products.slice(3, 7)
 
-// Imágenes para slider (usa URLs reales o placeholders)
 const sliderImages = [
   'https://via.placeholder.com/1200x400?text=Banner+1',
   'https://via.placeholder.com/1200x400?text=Banner+2',
