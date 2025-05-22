@@ -1,104 +1,107 @@
 const products = [
+    // Mujer
     {
       id: 1,
-      nombre: "Abrigo Beige Oversize",
-      precio: 150.00,
-      precioAntes: 180.00,
-      imagen: "/images/abrigo1.jpg",
-      descripcion: "Abrigo de lana ideal para climas fríos.",
-      rating: 4,
+      nombre: "Chanel Slingback Two-Tone",
+      precio: 132.50,
+      precioAntes: 149.00,
+      imagen: "/images/chanel_slingback.jpg",
+      descripcion: "Zapato bicolor con talón abierto, símbolo del chic parisino.",
+      rating: 5,
       descuento: true
     },
     {
       id: 2,
-      nombre: "Sudadera Azul Marino",
-      precio: 85.00,
+      nombre: "The Row Gala Silk Dress",
+      precio: 460.00,
       precioAntes: null,
-      imagen: "/images/sudadera1.jpg",
-      descripcion: "Sudadera cómoda y casual para el día a día.",
+      imagen: "/images/row_gala.jpg",
+      descripcion: "Vestido largo de seda con caída perfecta. Sin logos. Solo presencia.",
       rating: 5,
       descuento: false
     },
     {
       id: 3,
-      nombre: "Pantalón Cargo Verde Olivo",
-      precio: 120.00,
-      precioAntes: 140.00,
-      imagen: "/images/pantalon1.jpg",
-      descripcion: "Estilo urbano con múltiples bolsillos.",
-      rating: 3,
+      nombre: "Celine Pleated Trousers",
+      precio: 125.00,
+      precioAntes: 139.00,
+      imagen: "/images/celine_trousers.jpg",
+      descripcion: "Pantalón de pinzas con talle alto. Para una silueta marcada sin esfuerzo.",
+      rating: 4,
       descuento: true
     },
     {
       id: 4,
-      nombre: "Camiseta Básica Blanca",
-      precio: 35.00,
-      precioAntes: null,
-      imagen: "/images/camiseta1.jpg",
-      descripcion: "Camiseta de algodón 100% suave al tacto.",
-      rating: 4,
-      descuento: false
-    },
-    {
-      id: 5,
-      nombre: "Chaqueta de Mezclilla Clásica",
-      precio: 160.00,
-      precioAntes: 190.00,
-      imagen: "/images/chaqueta1.jpg",
-      descripcion: "El clásico que nunca pasa de moda.",
+      nombre: "Dior Bar Jacket in Wool",
+      precio: 370.00,
+      precioAntes: 410.00,
+      imagen: "/images/bar_jacket.jpg",
+      descripcion: "La chaqueta estructural que definió la silueta femenina del siglo XX.",
       rating: 5,
       descuento: true
     },
     {
-      id: 6,
-      nombre: "Pantalón Recto Negro",
-      precio: 110.00,
+      id: 5,
+      nombre: "Prada Satin Slingback Pumps",
+      precio: 125.00,
       precioAntes: null,
-      imagen: "/images/pantalon2.jpg",
-      descripcion: "Diseño formal pero cómodo.",
-      rating: 4,
+      imagen: "/images/prada_slingback.jpg",
+      descripcion: "Tacones en satén con broche delicado. Sofisticación pura.",
+      rating: 5,
+      descuento: false
+    },
+  
+    // Hombre
+    {
+      id: 6,
+      nombre: "Brioni Wool Suit Roma Fit",
+      precio: 710.00,
+      precioAntes: null,
+      imagen: "/images/brioni_suit.jpg",
+      descripcion: "Traje de lana virgen hecho a mano en Italia. Corte clásico con caída perfecta.",
+      rating: 5,
       descuento: false
     },
     {
       id: 7,
-      nombre: "Hoodie Gris Unisex",
-      precio: 95.00,
-      precioAntes: 120.00,
-      imagen: "/images/hoodie1.jpg",
-      descripcion: "Perfecto para outfits casuales.",
-      rating: 3,
+      nombre: "Celine Teddy Jacket in Wool",
+      precio: 325.00,
+      precioAntes: 380.00,
+      imagen: "/images/celine_teddy.jpg",
+      descripcion: "Chaqueta varsity en lana y piel suave. Detalle minimalista en los botones.",
+      rating: 4,
       descuento: true
     },
     {
       id: 8,
-      nombre: "Chaleco Acolchonado Negro",
-      precio: 105.00,
+      nombre: "Loro Piana Walk Loafers",
+      precio: 94.00,
       precioAntes: null,
-      imagen: "/images/chaleco1.jpg",
-      descripcion: "Ideal para clima templado.",
-      rating: 4,
+      imagen: "/images/loro_loafers.jpg",
+      descripcion: "Mocasines de ante y suela ligera. Pensados para caminar con estilo invisible.",
+      rating: 5,
       descuento: false
     },
     {
       id: 9,
-      nombre: "Camisa Cuadros Rojos",
-      precio: 70.00,
-      precioAntes: 90.00,
-      imagen: "/images/camisa1.jpg",
-      descripcion: "Camisa casual de franela.",
+      nombre: "Tom Ford Silk Tuxedo Shirt",
+      precio: 115.00,
+      precioAntes: null,
+      imagen: "/images/tf_tuxshirt.jpg",
+      descripcion: "Camisa de seda blanca con botones ocultos, ideal para noche formal.",
       rating: 5,
-      descuento: true
+      descuento: false
     },
     {
       id: 10,
-      nombre: "Joggers Deportivos Negros",
-      precio: 60.00,
-      precioAntes: null,
-      imagen: "/images/joggers1.jpg",
-      descripcion: "Perfectos para entrenar o descansar.",
-      rating: 3,
-      descuento: false
+      nombre: "Hermès H Belt Reversible",
+      precio: 135.00,
+      precioAntes: 155.00,
+      imagen: "/images/hermes_belt.jpg",
+      descripcion: "Cinturón de cuero granulado reversible con hebilla H refinada. Silencio visual.",
+      rating: 4,
+      descuento: true
     }
   ]
- 
+  
   export default products
