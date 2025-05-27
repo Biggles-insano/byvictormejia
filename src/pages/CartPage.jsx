@@ -9,6 +9,11 @@ export default function CartPage() {
     error
   } = useCart()
 
+  const handlePurchase = () => {
+    alert("¡Gracias por tu compra!")
+    clearCart()
+  }
+
   return (
     <div style={{ padding: '2rem' }}>
       <h1>Carrito de compras</h1>
@@ -38,7 +43,7 @@ export default function CartPage() {
             <button onClick={clearCart} style={{ marginTop: '1rem', padding: '0.5rem 1rem' }}>
               Vaciar carrito
             </button>
-            <button style={{ marginLeft: '1rem', padding: '0.5rem 1rem', backgroundColor: 'black', color: 'white' }}>
+            <button onClick={handlePurchase} style={{ marginLeft: '1rem', padding: '0.5rem 1rem', backgroundColor: 'black', color: 'white' }}>
               Comprar
             </button>
           </div>

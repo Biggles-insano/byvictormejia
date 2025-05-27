@@ -2,6 +2,21 @@ import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import products from '../data/products'
 import { useCart } from '../context/CartContext'
+import StarRating from '../components/StarRating'
+
+function DiscountLabel({ precio, precioAntes, descuento }) {
+  if (descuento) {
+    return (
+      <p>
+        <span style={{ textDecoration: 'line-through', marginRight: '0.5rem', color: '#888' }}>
+          ${precioAntes.toFixed(2)}
+        </span>
+        <strong>${precio.toFixed(2)}</strong>
+      </p>
+    )
+  }
+  return <p><strong>${precio.toFixed(2)}</strong></p>
+}
 
 export default function ProductPage() {
   const { id } = useParams()
@@ -9,6 +24,7 @@ export default function ProductPage() {
   const product = products.find(p => p.id === productId)
   const { addToCart } = useCart()
   const [talla, setTalla] = useState('')
+  const [userRating, setUserRating] = useState(product ? product.rating : 0)
 
   if (!product) {
     return <h2 style={{ padding: '2rem' }}>Producto no encontrado</h2>
@@ -42,7 +58,8 @@ export default function ProductPage() {
       {/* Información del producto */}
       <div style={{ maxWidth: '400px' }}>
         <h1>{product.nombre}</h1>
-        <p><strong>${product.precio.toFixed(2)}</strong></p>
+        <StarRating initialRating={userRating} onChange={setUserRating} />
+        <DiscountLabel precio={product.precio} precioAntes={product.precioAntes} descuento={product.descuento} />
 
         <label htmlFor="talla">Talla:</label>
         <select
