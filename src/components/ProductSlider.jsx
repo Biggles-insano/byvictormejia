@@ -24,7 +24,9 @@ export default function ProductSlider({ images }) {
         {images.map((_, index) => (
           <span
             key={index}
+            onClick={() => setCurrentIndex(index)}
             className={`indicator ${index === currentIndex ? 'active' : ''}`}
+            style={{ cursor: 'pointer' }}
           />
         ))}
       </div>

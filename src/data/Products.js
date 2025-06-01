@@ -3,6 +3,7 @@ const products = [
     {
       id: 1,
       nombre: "Chanel Slingback Two-Tone",
+      categoria: "zapatos",
       precio: 132.50,
       precioAntes: 149.00,
       imagenes: [
@@ -17,6 +18,7 @@ const products = [
     {
       id: 2,
       nombre: "The Row Gala Silk Dress",
+      categoria: "vestidos",
       precio: 460.00,
       precioAntes: null,
       imagenes: [
@@ -31,6 +33,7 @@ const products = [
     {
       id: 3,
       nombre: "Celine Pleated Trousers",
+      categoria: "pantalones",
       precio: 125.00,
       precioAntes: 139.00,
       imagenes: [
@@ -45,6 +48,7 @@ const products = [
     {
       id: 4,
       nombre: "Dior Bar Jacket in Wool",
+      categoria: "chaquetas",
       precio: 370.00,
       precioAntes: 410.00,
       imagenes: [
@@ -59,6 +63,7 @@ const products = [
     {
       id: 5,
       nombre: "Prada Satin Slingback Pumps",
+      categoria: "zapatos",
       precio: 125.00,
       precioAntes: null,
       imagenes: [
@@ -75,6 +80,7 @@ const products = [
     {
       id: 6,
       nombre: "Brioni Wool Suit Roma Fit",
+      categoria: "",
       precio: 710.00,
       precioAntes: null,
       imagenes: [
@@ -89,6 +95,7 @@ const products = [
     {
       id: 7,
       nombre: "Celine Teddy Jacket in Wool",
+      categoria: "chaquetas",
       precio: 325.00,
       precioAntes: 380.00,
       imagenes: [
@@ -103,6 +110,7 @@ const products = [
     {
       id: 8,
       nombre: "Loro Piana Walk Loafers",
+      categoria: "zapatos",
       precio: 94.00,
       precioAntes: null,
       imagenes: [
@@ -117,6 +125,7 @@ const products = [
     {
       id: 9,
       nombre: "Tom Ford Silk Tuxedo Shirt",
+      categoria: "camisas",
       precio: 115.00,
       precioAntes: null,
       imagenes: [
@@ -131,6 +140,7 @@ const products = [
     {
       id: 10,
       nombre: "Hermès H Belt Reversible",
+      categoria: "accesorios",
       precio: 135.00,
       precioAntes: 155.00,
       imagenes: [
@@ -146,6 +156,7 @@ const products = [
     {
       id: 11,
       nombre: "Dior Saddle Bag",
+      categoria: "bolsos",
       precio: 265.00,
       precioAntes: 320.00,
       imagenes: [
@@ -160,6 +171,7 @@ const products = [
     {
       id: 12,
       nombre: "Jacquemus Le Chiquito",
+      categoria: "bolsos",
       precio: 170.00,
       precioAntes: null,
       imagenes: [
@@ -174,6 +186,7 @@ const products = [
     {
       id: 13,
       nombre: "Gucci Marmont Matelassé",
+      categoria: "bolsos",
       precio: 295.00,
       precioAntes: 340.00,
       imagenes: [
@@ -188,6 +201,7 @@ const products = [
     {
       id: 14,
       nombre: "Loewe Puzzle Bag",
+      categoria: "bolsos",
       precio: 420.00,
       precioAntes: null,
       imagenes: [
@@ -202,6 +216,7 @@ const products = [
     {
       id: 15,
       nombre: "Prada Re-Edition 2005",
+      categoria: "bolsos",
       precio: 235.00,
       precioAntes: 260.00,
       imagenes: [
@@ -216,6 +231,7 @@ const products = [
     {
       id: 16,
       nombre: "Self-Portrait Lace Midi Dress",
+      categoria: "vestidos",
       precio: 150.00,
       precioAntes: 185.00,
       imagenes: [
@@ -230,6 +246,7 @@ const products = [
     {
       id: 17,
       nombre: "Zimmermann Silk Wrap Dress",
+      categoria: "vestidos",
       precio: 230.00,
       precioAntes: null,
       imagenes: [
@@ -244,6 +261,7 @@ const products = [
     {
       id: 18,
       nombre: "Carolina Herrera Red Gown",
+      categoria: "vestidos",
       precio: 340.00,
       precioAntes: 390.00,
       imagenes: [
@@ -258,6 +276,7 @@ const products = [
     {
       id: 19,
       nombre: "Ray-Ban Round Metal",
+      categoria: "accesorios",
       precio: 95.00,
       precioAntes: null,
       imagenes: [
@@ -272,6 +291,7 @@ const products = [
     {
       id: 20,
       nombre: "Celine Triomphe Sunglasses",
+      categoria: "accesorios",
       precio: 185.00,
       precioAntes: 215.00,
       imagenes: [

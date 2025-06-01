@@ -25,6 +25,7 @@ export default function ProductPage() {
   const { addToCart } = useCart()
   const [talla, setTalla] = useState('')
   const [userRating, setUserRating] = useState(product ? product.rating : 0)
+  const [selectedImage, setSelectedImage] = useState(0)
 
   if (!product) {
     return <h2 style={{ padding: '2rem' }}>Producto no encontrado</h2>
@@ -44,15 +45,28 @@ export default function ProductPage() {
       {/* Imagen del producto */}
       <div>
         <img
-          src={product.imagen}
+          src={product.imagenes?.[selectedImage] || product.imagen}
           alt={product.nombre}
           style={{ width: '400px', height: '500px', objectFit: 'cover', borderRadius: '8px' }}
         />
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem', gap: '0.5rem' }}>
-          <span>⚫</span>
-          <span>⚪</span>
-          <span>⚪</span>
-        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem', gap: '0.75rem' }}>
+  {[0, 1, 2].map(index => (
+    <button
+      key={index}
+      onClick={() => setSelectedImage(index)}
+      style={{
+        width: '10px',
+        height: '10px',
+        borderRadius: '50%',
+        border: selectedImage === index ? '2px solid #000080' : '1px solid #000080',
+        backgroundColor: selectedImage === index ? '#000080' : 'transparent',
+        cursor: 'pointer',
+        transition: 'all 0.3s ease',
+        padding: 0
+      }}
+    />
+  ))}
+</div>
       </div>
 
       {/* Información del producto */}
@@ -67,7 +81,16 @@ export default function ProductPage() {
           name="talla"
           value={talla}
           onChange={(e) => setTalla(e.target.value)}
-          style={{ display: 'block', margin: '1rem 0', padding: '0.5rem' }}
+          style={{
+            display: 'block',
+            margin: '1rem 0',
+            padding: '0.75rem 1rem',
+            fontSize: '1rem',
+            borderRadius: '6px',
+            border: '1px solid #ccc',
+            backgroundColor: '#fff',
+            fontFamily: 'Libre Baskerville, serif'
+          }}
         >
           <option value="">Selecciona la talla</option>
           <option value="XS">XS</option>

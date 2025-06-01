@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Libre Baskerville', serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #1e1e1e;
+  background-color: #f3e8dd;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,10 +26,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #f3e8dd;
 }
 
 h1 {
@@ -56,8 +56,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #1e1e1e;
+    background-color: #f3e8dd;
   }
   a:hover {
     color: #747bff;
@@ -65,4 +65,13 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.product-name {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
 }
