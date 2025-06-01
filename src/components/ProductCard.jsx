@@ -67,10 +67,10 @@ export default function ProductCard({ product }) {
           }}
           aria-label={isFavorite ? "Quitar de favoritos" : "Agregar a favoritos"}
         >
-          {/* Unicode heart */}
+         {/* Unicode heart */}
           ♥
         </button>
-        <img src={product.imagen} alt={product.nombre} width="150" height="200" />
+        <img src={product.imagenes[0]} alt={product.nombre} width="150" height="200" />
         <h3>{product.nombre}</h3>
         <StarRating rating={product.rating} />
         <DiscountLabel precio={product.precio} precioAntes={product.precioAntes} descuento={product.descuento} />
