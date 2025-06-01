@@ -24,7 +24,7 @@ export default function ProductCarousel({ title, products }) {
           >
             <div>
               <img
-                src={product.imagen}
+                src={product.imagenes[0]}
                 alt={product.nombre}
                 style={{
                   width: '100%',

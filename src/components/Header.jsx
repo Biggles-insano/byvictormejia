@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { FaInstagram, FaTiktok, FaShoppingCart } from 'react-icons/fa'
 
 export default function Header() {
   return (
@@ -28,7 +29,7 @@ export default function Header() {
           }}
         >
           <img
-            src="/logo.png"
+            src="/images/logo.png"
             alt="Logo byvictormejia"
             style={{ height: 35, width: 'auto', cursor: 'pointer' }}
           />
@@ -48,23 +49,26 @@ export default function Header() {
           href="https://www.instagram.com/byvictormejia/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ textDecoration: 'none', fontWeight: 500, color: '#ffffff' }}
+          style={{ color: '#ffffff', fontSize: '1.5rem' }}
+          aria-label="Instagram"
         >
-          Instagram
+          <FaInstagram />
         </a>
         <a
           href="https://www.tiktok.com/@tu_usuario"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ textDecoration: 'none', fontWeight: 500, color: '#ffffff' }}
+          style={{ color: '#ffffff', fontSize: '1.5rem' }}
+          aria-label="TikTok"
         >
-          TikTok
+          <FaTiktok />
         </a>
         <Link
           to="/carrito"
-          style={{ textDecoration: 'none', fontWeight: 500, color: '#ffffff' }}
+          style={{ color: '#ffffff', fontSize: '1.5rem' }}
+          aria-label="Carrito"
         >
-          Carrito
+          <FaShoppingCart />
         </Link>
       </div>
     </nav>

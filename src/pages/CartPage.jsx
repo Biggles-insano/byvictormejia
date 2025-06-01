@@ -10,6 +10,10 @@ export default function CartPage() {
   } = useCart()
 
   const handlePurchase = () => {
+    if (error) {
+      alert("ERROR: El total excede $999.99. No se puede completar la compra.")
+      return
+    }
     alert("¡Gracias por tu compra!")
     clearCart()
   }
@@ -43,7 +47,18 @@ export default function CartPage() {
             <button onClick={clearCart} style={{ marginTop: '1rem', padding: '0.5rem 1rem' }}>
               Vaciar carrito
             </button>
-            <button onClick={handlePurchase} style={{ marginLeft: '1rem', padding: '0.5rem 1rem', backgroundColor: 'black', color: 'white' }}>
+            <button
+              onClick={handlePurchase}
+              disabled={error}
+              style={{
+                marginLeft: '1rem',
+                padding: '0.5rem 1rem',
+                backgroundColor: 'black',
+                color: 'white',
+                cursor: error ? 'not-allowed' : 'pointer',
+                opacity: error ? 0.5 : 1
+              }}
+            >
               Comprar
             </button>
           </div>
