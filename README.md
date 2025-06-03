@@ -91,12 +91,10 @@ export default defineConfig({
 
 🚀 Comandos
 
-Acción	Comando
-Ejecutar app	npm run dev
-Ejecutar pruebas	npm test
-Ejecutar lint (si aplica)	npm run lint
-Storybook en desarrollo	npm run storybook
-Build de Storybook	npm run build-storybook
+Ejecutar app: npm run dev
+Ejecutar pruebas: npm test
+Storybook: npm run storybook
+Build de Storybook: npm run build-storybook
 
 🌐 Despliegue
 	•	(link)
