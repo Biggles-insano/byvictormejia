@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import products from '../data/products'
 import { useCart } from '../context/CartContext'
 import StarRating from '../components/StarRating'
+import useProductHistory from '../hooks/useProductHistory'
 
 function DiscountLabel({ precio, precioAntes, descuento }) {
   if (descuento) {
@@ -26,6 +27,11 @@ export default function ProductPage() {
   const [talla, setTalla] = useState('')
   const [userRating, setUserRating] = useState(product ? product.rating : 0)
   const [selectedImage, setSelectedImage] = useState(0)
+  const { addToHistory, recommended } = useProductHistory()
+
+  useEffect(() => {
+    if (product) addToHistory(product)
+  }, [product])
 
   if (!product) {
     return <h2 style={{ padding: '2rem' }}>Producto no encontrado</h2>

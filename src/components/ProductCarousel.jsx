@@ -12,32 +12,55 @@ export default function ProductCarousel({ title, products }) {
           gap: '2rem',
         }}
       >
-        {products.map(product => (
-          <Link
-            key={product.id}
-            to={`/producto/${product.id}`}
-            style={{
-              width: '200px',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-          >
-            <div>
-              <img
-                src={product.imagenes[0]}
-                alt={product.nombre}
-                style={{
-                  width: '100%',
-                  height: '240px',
-                  objectFit: 'cover',
-                  borderRadius: '8px',
-                }}
-              />
-              <h3 style={{ marginTop: '0.5rem' }}>{product.nombre}</h3>
-              <p>${product.precio.toFixed(2)}</p>
-            </div>
-          </Link>
-        ))}
+        {products.map(product => {
+          const imageUrl = product.imagenes?.[0] || product.imagen || ''
+
+          return (
+            <Link
+              key={product.id}
+              to={`/producto/${product.id}`}
+              style={{
+                width: '200px',
+                textDecoration: 'none',
+                color: 'inherit',
+              }}
+            >
+              <div>
+                {imageUrl ? (
+                  <img
+                    src={imageUrl}
+                    alt={product.nombre}
+                    style={{
+                      width: '100%',
+                      height: '240px',
+                      objectFit: 'cover',
+                      borderRadius: '8px',
+                    }}
+                    onError={(e) => {
+                      e.target.style.display = 'none'
+                    }}
+                  />
+                ) : (
+                  <div style={{
+                    width: '100%',
+                    height: '240px',
+                    borderRadius: '8px',
+                    backgroundColor: '#eee',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: '#888',
+                    fontSize: '0.9rem'
+                  }}>
+                    Imagen no disponible
+                  </div>
+                )}
+                <h3 style={{ marginTop: '0.5rem' }}>{product.nombre}</h3>
+                <p>${product.precio.toFixed(2)}</p>
+              </div>
+            </Link>
+          )
+        })}
       </div>
     </section>
   )

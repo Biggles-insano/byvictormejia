@@ -55,20 +55,18 @@ export default function ProductCard({ product }) {
           onClick={handleFavoriteClick}
           style={{
             position: 'absolute',
-            top: 8,
-            right: 8,
-            background: 'none',
+            top: '8px',
+            right: '8px',
+            fontSize: '24px',
+            color: isFavorite ? '#cc0000' : '#333',
+            background: 'transparent',
             border: 'none',
             cursor: 'pointer',
-            fontSize: 22,
-            color: isFavorite ? 'red' : 'gray',
-            zIndex: 10,
-            padding: 0,
+            zIndex: 10
           }}
           aria-label={isFavorite ? "Quitar de favoritos" : "Agregar a favoritos"}
         >
-         {/* Unicode heart */}
-          ♥
+          <span style={{ fontSize: '1.2rem', color: isFavorite ? 'red' : 'gray' }}>❤️</span>
         </button>
         <img src={product.imagenes[0]} alt={product.nombre} width="150" height="200" />
         <h3>{product.nombre}</h3>
