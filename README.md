@@ -11,19 +11,16 @@ Este es un proyecto de tienda online desarrollado en React usando buenas prácti
   - Subtotal, total y botón de compra.
   - Validación: si el total excede $999.99, se muestra un mensaje de error.
   - Vaciar carrito.
-- Favoritos con historial de likes (usando `useRef`).
-- Recomendaciones por historial de navegación (`useMemo`).
-- Uso de `useContext` para el estado global del carrito.
-- Máximo 3 vistas:
+
+
+- 3 vistas:
   - Tienda principal.
   - Detalle de producto.
   - Carrito de compras.
 
-## 🧠 React Hooks Usados
+## 🧠 React Hooks Usado
 
 - `useContext`: manejo global del carrito.
-- `useRef`: historial de productos favoritos.
-- `useMemo`: recomendaciones basadas en navegación.
 
 ## 🧪 Testing
 
@@ -73,7 +70,7 @@ Storybook y addons:
 
 npx storybook init
 
-Esto instala:
+Eso (osea el comando de arriba) instala:
 	•	@storybook/react
 	•	@storybook/addon-essentials
 	•	@storybook/testing-react
@@ -102,8 +99,8 @@ Storybook en desarrollo	npm run storybook
 Build de Storybook	npm run build-storybook
 
 🌐 Despliegue
-	•	🔗 App en línea
-	•	📁 Repositorio GitHub
+	•	(link)
+
 
 📁 Estructura de Carpetas
 
@@ -126,14 +123,3 @@ src/
 ├── stories/
 │   └── *.stories.jsx
 └── main.jsx
-
-✅ Checklist
-	•	Mínimo 10 productos.
-	•	Carrito funcional y validaciones.
-	•	Vaciar carrito.
-	•	useContext, useMemo, useRef implementados.
-	•	Storybook con 3 componentes documentados.
-	•	3 pruebas unitarias como mínimo.
-	•	Máximo 3 vistas.
-	•	Componentes < 40 líneas cada uno.
-
