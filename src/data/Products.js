@@ -8,8 +8,8 @@ const products = [
     precioAntes: 149.00,
     imagenes: [
       "https://www.chanel.com/images///c_crop,w_1600,g_north,f_auto,q_auto:good,dpr_1.1/w_3200/-9555546570782.jpg%203200w",
-      "/images/chanelslingback.jpg",
-      "/images/chanelslingback.jpg"
+      "https://blog.fashionphile.com/wp-content/uploads/2023/05/Hero-7.jpg",
+      "https://th.bing.com/th/id/R.697b602ba759779e1477115b9e943247?rik=wBVsuJApmpYxUA&pid=ImgRaw&r=0"
     ],
     descripcion: "Zapato bicolor con talón abierto, símbolo del chic parisino.",
     rating: 5,
@@ -23,8 +23,8 @@ const products = [
     precioAntes: null,
     imagenes: [
       "/images/row_gala.jpg",
-      "/images/row_gala2.jpg",
-      "/images/row_gala3.jpg"
+      "https://th.bing.com/th/id/OIP.miAVts2jhiwdcrzXi0NiiQHaLH?rs=1&pid=ImgDetMain",
+      "https://i.pinimg.com/originals/5d/ba/92/5dba92dff1b6becbe003f41fc89caf47.jpg"
     ],
     descripcion: "Vestido largo de seda con caída perfecta. Sin logos. Solo presencia.",
     rating: 5,
@@ -38,8 +38,8 @@ const products = [
     precioAntes: 139.00,
     imagenes: [
       "/images/celine_trousers.jpg",
-      "/images/celine_trousers.jpg",
-      "/images/celine_trousers.jpg"
+      "https://th.bing.com/th/id/R.84c1b730ab0e1f430068c656fe660791?rik=1HYGhDAQcLyGAA&pid=ImgRaw&r=0",
+      "https://cache.mrporter.com/variants/images/560971903897077/in/w2000_q60.jpg"
     ],
     descripcion: "Pantalón de pinzas con talle alto. Para una silueta marcada sin esfuerzo.",
     rating: 4,
@@ -52,8 +52,8 @@ const products = [
     precio: 370.00,
     precioAntes: 410.00,
     imagenes: [
-      "/images/bar_jacket.jpg",
-      "/images/bar_jacket.jpg",
+      "https://th.bing.com/th/id/OIF.BPkHfdFx2KMnqLlBgXIL0g?rs=1&pid=ImgDetMain",
+      "https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_2_LOOK_097_E06?$lookDefault_GH-GHC$&crop=572,0,1856,2000&wid=1850&hei=2000&scale=1&bfc=on&qlt=85",
       "/images/bar_jacket.jpg"
     ],
     descripcion: "La chaqueta estructural que definió la silueta femenina del siglo XX.",
@@ -68,8 +68,8 @@ const products = [
     precioAntes: null,
     imagenes: [
       "/images/prada_slingback.jpg",
-      "/images/prada_slingback.jpg",
-      "/images/prada_slingback.jpg"
+      "https://cdna.lystit.com/520/650/n/photos/prada/ae657535/prada-Tobacco-Satin-Slingback-Pumps.jpeg",
+      "https://cdna.lystit.com/520/650/n/photos/thahab/41097624/prada-Brown-35-Satin-Slingback-Pumps.jpeg"
     ],
     descripcion: "Tacones en satén con broche delicado. Sofisticación pura.",
     rating: 5,
@@ -83,8 +83,8 @@ const products = [
     precioAntes: null,
     imagenes: [
       "/images/brioni_suit.jpg",
-      "/images/brioni_suit.jpg",
-      "/images/brioni_suit.jpg"
+      "https://suitablee.com/media/catalog/product/z/d/zd044-1.jpg",
+      "https://cdna.lystit.com/520/650/n/photos/lvr/eb5ee9e8/brioni-Black-Smoking-Perseo-Wool-Mohair-Suit.jpeg"
     ],
     descripcion: "Traje de lana virgen hecho a mano en Italia. Corte clásico con caída perfecta.",
     rating: 5,
@@ -98,8 +98,8 @@ const products = [
     precioAntes: 380.00,
     imagenes: [
       "/images/celine_teddy.jpg",
-      "/images/celine_teddy.jpg",
-      "/images/celine_teddy.jpg"
+      "https://th.bing.com/th/id/OIP.y_oqf3t6t7rCsKgkfAAL6gHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain",
+      "https://brands-hub.ru/wp-content/uploads/2023/10/Celine-Women-Classic-Teddy-Jacket-in-Textured-Wool-1.jpg"
     ],
     descripcion: "Chaqueta varsity en lana y piel suave. Detalle minimalista en los botones.",
     rating: 4,
@@ -113,8 +113,8 @@ const products = [
     precioAntes: null,
     imagenes: [
       "/images/loro_loafers.jpg",
-      "/images/loro_loafers.jpg",
-      "/images/loro_loafers.jpg"
+      "https://th.bing.com/th/id/OIP.puJvtu7nVlSMdbvswuIGqgHaJ4?rs=1&pid=ImgDetMain",
+      "https://cache.mrporter.com/variants/images/12938511207183806/e3/w2000_q60.jpg"
     ],
     descripcion: "Mocasines de ante y suela ligera. Pensados para caminar con estilo invisible.",
     rating: 5,
@@ -128,8 +128,8 @@ const products = [
     precioAntes: null,
     imagenes: [
       "/images/tf_tuxshirt.jpg",
-      "/images/tf_tuxshirt.jpg",
-      "/images/tf_tuxshirt.jpg"
+      "https://cdn.media.amplience.net/i/harryrosen/20014797",
+      "https://th.bing.com/th/id/OIP.LkM9fJ-4HJ_bDeMJP74ujQHaLH?rs=1&pid=ImgDetMain"
     ],
     descripcion: "Camisa de seda blanca con botones ocultos, ideal para noche formal.",
     rating: 5,
